@@ -1,8 +1,8 @@
 #----------------------------->
 grViz("
-digraph neato {
+digraph twopi {
 
-graph [layout = neato, overlap=false]
+graph [layout = twopi, overlap=false]
 
 node [shape = circle,
       style = filled,
