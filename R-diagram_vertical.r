@@ -1,4 +1,5 @@
 #----------------------------->
+library(DiagrammeR)
 grViz("
 digraph dot {
 
@@ -44,28 +45,3 @@ edge [color = grey, arrowhead = none, arrowtail = none]
 
 edge [color = grey, arrowhead = none, arrowtail = none]
 }")
-
-j [label = 'display_tiles.py', fillcolor = Thistle1];
-k [label = 'main_analyse.py', fillcolor = Thistle2];
-l [label = 'main_auto.py', fillcolor = Thistle3];
-mm [label = 'main_convert.py', fillcolor = Plum1];
-nn [label = 'main_export.py', fillcolor = Plum2];
-oo [label = 'main_timestamp.py', fillcolor = Plum3];
-pp [label = 'main_vectorize.py', fillcolor = Orchid1];
-qq [label = 'open_mat.py', fillcolor = Orchid2];
-rr [label = 'read_mseed.py', fillcolor = Orchid3];
-ss [label = 'segtest.py', fillcolor = MediumPurple1];
-tt [label = 'test_annot.py', fillcolor = MediumPurple2];
-
-
-j [label = 'display_tiles.py'];
-k [label = 'main_analyse.py'];
-l [label = 'main_auto.py'];
-mm [label = 'main_convert.py'];
-nn [label = 'main_export.py'];
-oo [label = 'main_timestamp.py'];
-pp [label = 'main_vectorize.py'];
-qq [label = 'open_mat.py'];
-rr [label = 'read_mseed.py'];
-ss [label = 'segtest.py'];
-tt [label = 'test_annot.py'];
