@@ -1,5 +1,5 @@
 # https://rich-iannone.github.io/DiagrammeR/graphviz_and_mermaid.html
-
+library(DiagrammeR)
 # ----------- mermaid Basics - 1 (horizontal) ------------>
 mermaid("
 graph LR
@@ -58,5 +58,29 @@ sequenceDiagram
   else sold out
     database->>ticket seller: none left
     ticket seller->>customer: sorry
+  end
+")
+
+#--------------- MY mermaid sequenceDiagram ---------------->
+mermaid("
+sequenceDiagram
+  ROB Archives->>Cytomine: data collection
+  ROB Archives->>Cytomine: data scanning
+  Cytomine->>Python: data organizing and storage
+  Cytomine->>Python: generating ontology classes
+  Python->>.MSEED: data vectorisation
+  alt dataset processing
+    Cytomine->>ROB Archives: dataset update
+    Python->>.MSEED: data conversion
+    Python->>.MSEED: tile processing
+    Python->>.MSEED: segmentation
+    Python->>.MSEED: time labelling
+    .MSEED->>ObsPy: data conversion
+    .MSEED->>ObsPy: data plotting and visualization
+  else dataset processing completed
+    Python->>Cytomine: data upload
+    Python->>Cytomine: data overlay
+    Cytomine->>ROB Archives: data quality control
+    Cytomine->>ROB Archives: dataset reuse
   end
 ")
