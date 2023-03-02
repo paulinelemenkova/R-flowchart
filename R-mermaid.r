@@ -84,3 +84,39 @@ sequenceDiagram
     Cytomine->>ROB Archives: dataset reuse
   end
 ")
+
+# ----------- mermaid 02.03.2023 (flowchart) ------------>
+mermaid("
+graph LR
+A((Materials and Data))-->B((Satellite Images))
+B-->L{USGS EarthExplorer}
+B-->C{Landsat OLI/TIRS}
+C-->D[LC08_L1TP_175042_20131116_20200912_02_T1]
+C-->E[LC08_L1TP_175042_20151122_20200908_02_T1]
+C-->F[LC08_L1TP_175042_20161108_20200905_02_T1]
+C-->G[LC08_L1TP_175042_20191117_20200825_02_T1]
+C-->H[LC08_L1TP_175042_20221109_20221121_02_T1]
+C-->I[LC09_L1TP_175042_20230120_20230120_02_T1]
+A((Materials and Data))-->J((Topographic Data))
+J-->K((DCW Chart))
+J-->M((GEBCO/SRTM))
+M-->N[GEBCO_2022 grid 15 arc sec resolution NetCDF]
+M-->O[SRTM15+ dataset  15 arc sec interval global terrain model]
+style A fill:#ffea00,stroke:#333,stroke-width:1px
+style B fill:#e597b2,stroke:#333,stroke-width:1px
+style C fill:#f6ad49 ,stroke:#333,stroke-width:1px
+style D fill:#f6bfbc,stroke:#333,stroke-width:1px,color:Indigo,stroke-dasharray: 5 5
+style E fill:#f5b1aa,stroke:#333,stroke-width:1px,color:Indigo,stroke-dasharray: 5 5
+style F fill:#f5b199,stroke:#333,stroke-width:1px,color:Indigo,stroke-dasharray: 5 5
+style G fill:#f2a0a1,stroke:#333,stroke-width:1px,color:Indigo,stroke-dasharray: 5 5
+style H fill:#f0908d,stroke:#333,stroke-width:1px,color:Indigo,stroke-dasharray: 5 5
+style I fill:#ee827c,stroke:#333,stroke-width:1px,color:Indigo,stroke-dasharray: 5 5
+style J fill:#c3d825,stroke:#333,stroke-width:1px
+style K fill:#ffd900,stroke:#333,stroke-width:1px
+style L fill:#ffdb4f,stroke:#333,stroke-width:1px
+style M fill:#e0c38c,stroke:#333,stroke-width:1px
+style N fill:#a6a5c4,stroke:#333,stroke-width:1px
+style O fill:#f7b977,stroke:#333,stroke-width:1px
+")
+
+
