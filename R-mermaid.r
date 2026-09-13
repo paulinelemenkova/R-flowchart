@@ -1,3 +1,16 @@
+# ============================================================================
+# Workflow flowcharts in R (mermaid via DiagrammeR).
+# The mermaid flowcharts in this repository produced Figures 4 and 5 in the
+# peer-reviewed article:
+#   Lemenkova, P. (2023). A GRASS GIS Scripting Framework for Monitoring Changes
+#   in the Ephemeral Salt Lakes of Chotts Melrhir and Merouane, Algeria.
+#   Applied System Innovation, 6(4), 61.
+#   DOI:  https://doi.org/10.3390/asi6040061
+#   MDPI: https://www.mdpi.com/2571-5577/6/4/61
+#
+# Author: Polina Lemenkova  |  ORCID: 0000-0002-5759-1089
+# ============================================================================
+
 # https://rich-iannone.github.io/DiagrammeR/graphviz_and_mermaid.html
 library(DiagrammeR)
 # ----------- mermaid Basics - 1 (horizontal) ------------>
